@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강남 쩜오 시스템부터 가격까지 - 8년 운영진이 알려주는 현실 가이드</title>
+    <meta name="description" content="강남 쩜오 실무 8년차가 시스템, 가격, 예약부터 초이스까지 솔직하게 안내합니다. 월 평균 430팀 방문, 재방문율 76% 검증된 정보. 상담 문의 010-2303-3778">
+    <link rel="canonical" href="https://example.com/gangnam-jjumo">
+    <meta property="og:title" content="강남 쩜오 시스템부터 가격까지 - 8년 운영진이 알려주는 현실 가이드">
+    <meta property="og:description" content="강남 쩜오 실무 8년차가 시스템, 가격, 예약부터 초이스까지 솔직하게 안내합니다. 상담 010-2303-3778">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/gangnam-jjumo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="강남 쩜오 시스템부터 가격까지 - 8년 운영진이 알려주는 현실 가이드">
+    <meta name="twitter:description" content="강남 쩜오 실무 8년차가 시스템, 가격, 예약부터 초이스까지 솔직하게 안내합니다.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-black: #0a0a0a;
+            --champagne-gold: #d4af37;
+            --royal-purple: #6a0dad;
+            --soft-purple: rgba(106, 13, 173, 0.15);
+            --gold-glow: rgba(212, 175, 55, 0.3);
+            --text-primary: #ffffff;
+            --text-secondary: #e0e0e0;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            background: var(--deep-black);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 30%, var(--gold-glow) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(106, 13, 173, 0.2) 0%, transparent 50%);
+            animation: pulseGlow 8s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1200px;
+            padding: 2rem;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: clamp(2rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--champagne-gold) 0%, #f4e4c1 50%, var(--champagne-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 80px var(--gold-glow);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 500;
+            animation: fadeInUp 1.4s ease-out;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeInUp 1.6s ease-out;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            background: linear-gradient(135deg, var(--champagne-gold) 0%, #b8941f 100%);
+            color: var(--deep-black);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.6);
+        }
+
+        .cta-phone {
+            font-size: 1.3rem;
+            color: var(--champagne-gold);
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--champagne-gold);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--royal-purple), transparent);
+        }
+
+        /* TOC */
+        .toc {
+            background: linear-gradient(135deg, rgba(106, 13, 173, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 4rem 0;
+        }
+
+        .toc h2 {
+            font-size: 1.8rem;
+            color: var(--champagne-gold);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .toc-list li {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .toc-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--royal-purple);
+            font-weight: bold;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .toc-list a:hover {
+            color: var(--champagne-gold);
+        }
+
+        /* Content Card */
+        .content-card {
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(30, 10, 50, 0.6) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 25px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 80px rgba(106, 13, 173, 0.3);
+        }
+
+        .content-card h2 {
+            font-size: 2rem;
+            color: var(--champagne-gold);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .content-card h3 {
+            font-size: 1.5rem;
+            color: var(--royal-purple);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        .content-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .content-card ul, .content-card ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .content-card li {
+            color: var(--text-secondary);
+            margin-bottom: 0.8rem;
+            line-height: 1.8;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(106, 13, 173, 0.1) 100%);
+            border-left: 4px solid var(--champagne-gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .highlight-box strong {
+            color: var(--champagne-gold);
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(30, 10, 50, 0.6) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-question {
+            font-size: 1.3rem;
+            color: var(--champagne-gold);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Mobile Fixed CTA */
+        .mobile-fixed-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--champagne-gold) 0%, #b8941f 100%);
+            padding: 1rem;
+            box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .mobile-fixed-cta a {
+            display: block;
+            text-align: center;
+            color: var(--deep-black);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-fixed-cta {
+                display: block;
+            }
+
+            .section {
+                padding: 4rem 0;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(10, 10, 10, 0.95);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-contact {
+            font-size: 1.5rem;
+            color: var(--champagne-gold);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Image Styles */
+        .section-image {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border-radius: 20px;
+            margin: 2.5rem auto;
+            display: block;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-image:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 20px 60px rgba(106, 13, 173, 0.4);
+        }
+
+        .image-figure {
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+
+        .image-caption {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* Hero Background Image */
+        .hero-with-image {
+            background-image:
+                linear-gradient(135deg, rgba(10, 10, 10, 0.85) 0%, rgba(26, 10, 46, 0.85) 50%, rgba(10, 10, 10, 0.85) 100%),
+                url('images/gangnam-jjumo-hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 768px) {
+            .section-image {
+                border-radius: 15px;
+                margin: 2rem auto;
+            }
+
+            .hero-with-image {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero hero-with-image">
+        <div class="hero-content">
+            <h1>강남 쩜오 시스템부터 가격까지<br>8년 운영진이 알려주는 현실 가이드</h1>
+            <p class="hero-subtitle">월 평균 430팀 방문, 재방문율 76% 검증된 정보 | 예약부터 초이스까지 솔직하게 안내합니다</p>
+            <div class="hero-cta">
+                <a href="tel:01023033778" class="cta-button">전화 상담 받기</a>
+                <a href="tel:01023033778" class="cta-phone">📞 010-2303-3778</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOC Section -->
+    <div class="container">
+        <div class="toc fade-in">
+            <h2>📋 목차</h2>
+            <ul class="toc-list">
+                <li><a href="#intro">강남 쩜오란 무엇인가?</a></li>
+                <li><a href="#system">쩜오 시스템 완벽 이해</a></li>
+                <li><a href="#price">가격 안내</a></li>
+                <li><a href="#reservation">예약 방법 및 절차</a></li>
+                <li><a href="#entry">입실부터 룸 배정까지</a></li>
+                <li><a href="#choice">초이스 시스템 자세히</a></li>
+                <li><a href="#tips">실무자가 알려주는 팁</a></li>
+                <li><a href="#caution">주의사항 및 에티켓</a></li>
+                <li><a href="#faq">자주 묻는 질문 FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Section 1: Intro -->
+        <section id="intro" class="section fade-in">
+            <div class="content-card">
+                <h2>강남 쩜오란 무엇인가?</h2>
+                <p>저희 매장에서 8년째 일하고 있습니다. 그동안 수천 팀을 응대하면서 "쩜오가 정확히 뭐예요?"라는 질문을 정말 많이 받았습니다. 강남 쩜오는 기존 룸싸롱과 하이퍼블릭의 장점만 결합한 프리미엄 유흥 시스템입니다.</p>
+
+                <p>룸싸롱처럼 1대1 전담 서비스를 받지만, 하이퍼블릭처럼 초이스 시스템이 있어서 원하는 스타일을 직접 선택할 수 있습니다. 가라오케처럼 노래방 시설이 완비되어 있고, 동시에 고급스러운 분위기에서 편안하게 즐길 수 있죠.</p>
+
+                <div class="highlight-box">
+                    <p><strong>핵심 포인트:</strong> 강남 쩜오는 단순히 술 마시는 곳이 아닙니다. 체계적인 서비스 시스템, 엄격한 관리, 투명한 가격 구조를 갖춘 프리미엄 엔터테인먼트 공간입니다.</p>
+                </div>
+
+                <h3>강남 지역 특징</h3>
+                <p>강남역 일대는 서울에서 쩜오 문화가 가장 발달한 곳입니다. 역삼동, 논현동, 청담동에 걸쳐 다양한 등급의 매장들이 밀집해 있어서 선택의 폭이 넓습니다. 저희 매장은 강남역 8번 출구에서 도보 5분 거리에 위치해 있으며, 지난 8년간 한 자리를 지키면서 월 평균 430팀 정도의 고객분들을 모시고 있습니다.</p>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-interior-01.webp"
+                         alt="강남 쩜오 프리미엄 인테리어 - 고급스러운 분위기의 VIP 라운지"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">강남 쩜오의 세련된 인테리어 - 프리미엄 분위기</figcaption>
+                </figure>
+
+                <p>솔직히 말씀드리면, 강남 쩜오는 가격대가 높은 편입니다. 하지만 그만큼 서비스 퀄리티, 시설 수준, 여성 관리 시스템이 타 지역과는 확연히 다릅니다. 재방문율 76%라는 수치가 이를 증명합니다.</p>
+
+                <p>현장에서 일하다 보면 처음 방문하시는 분들이 시스템을 몰라서 당황하는 경우를 자주 봅니다. 이 가이드는 그런 분들을 위해 작성했습니다. 과장 없이, <a href="#system" style="color: var(--champagne-gold);">쩜오 시스템</a>부터 가격, 예약, 주의사항까지 현실적으로 설명드리겠습니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: System -->
+        <section id="system" class="section fade-in">
+            <div class="content-card">
+                <h2>쩜오 시스템 완벽 이해</h2>
+                <p>쩜오 시스템을 처음 접하시는 분들은 복잡하게 느끼실 수 있습니다. 하지만 한 번만 경험하시면 오히려 다른 유흥 업소보다 훨씬 효율적이고 편리하다는 걸 느끼실 겁니다.</p>
+
+                <h3>기본 운영 구조</h3>
+                <p>저희 매장은 총 18개 룸으로 구성되어 있습니다. 각 룸은 4인실부터 12인실까지 다양하며, 모든 룸에 최신형 노래방 기기와 고급 음향 시스템이 설치되어 있습니다. 평일 기준으로 오후 6시부터 새벽 4시까지 운영하며, 주말에는 새벽 5시까지 연장됩니다.</p>
+
+                <p>한 가지 확실히 말씀드리면, 저희는 "깍두기" 시스템을 운영하지 않습니다. 깍두기란 인원수에 맞지 않게 여성 인력을 더 투입하는 방식인데, 이는 서비스 퀄리티를 떨어뜨리고 고객님들께 불편을 드릴 수 있습니다. 2명이 오시면 정확히 2명, 4명이 오시면 정확히 4명의 여성분들이 배정됩니다.</p>
+
+                <h3>서비스 타임라인</h3>
+                <p>입실부터 퇴실까지 전체 과정은 대략 이렇습니다:</p>
+
+                <ol>
+                    <li><strong>도착 및 체크인 (5분):</strong> 프론트에서 예약 확인 후 대기실로 안내</li>
+                    <li><strong>룸 배정 (3분):</strong> 인원과 예약 상황에 따라 룸 배정</li>
+                    <li><strong>초이스 진행 (10~15분):</strong> 원하시는 스타일 선택</li>
+                    <li><strong>기본 서비스 (2시간):</strong> 주류, 안주, 노래, 대화</li>
+                    <li><strong>연장 여부 결정 (5분):</strong> 시간 연장 또는 퇴실</li>
+                    <li><strong>정산 및 퇴실 (10분):</strong> 계산 후 퇴실</li>
+                </ol>
+
+                <p>기본 2시간 코스 기준으로 전체 소요 시간은 약 2시간 30분 정도입니다. 물론 연장하시면 그만큼 더 길어지죠.</p>
+
+                <div class="highlight-box">
+                    <p><strong>실무 팁:</strong> 금요일 저녁과 토요일 저녁에는 예약이 몰립니다. 이 시간대에 방문하실 계획이라면 최소 2~3일 전에 예약하시는 걸 권장드립니다. 당일 예약은 평일 기준으로만 가능한 경우가 많습니다.</p>
+                </div>
+
+                <h3>담당 배정 시스템</h3>
+                <p>초이스 후 배정된 여성분은 입실부터 퇴실까지 해당 테이블을 전담합니다. 중간에 교체되거나 다른 테이블로 이동하지 않습니다. 이게 쩜오와 다른 업종의 가장 큰 차이점입니다.</p>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-vip-room.webp"
+                         alt="강남 쩜오 VIP 룸 - 최신형 노래방 기기와 고급 음향 시스템 완비"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">프리미엄 VIP 룸 - 최고급 시설과 편안한 공간</figcaption>
+                </figure>
+
+                <p>담당자는 주류 서빙, 안주 준비, 노래 듀엣, 대화 상대 등 전반적인 서비스를 제공합니다. 8년 일하면서 느낀 건데, 이 1대1 전담 시스템이 고객 만족도에 가장 큰 영향을 미칩니다. <a href="#choice" style="color: var(--champagne-gold);">초이스 시스템</a>에서 신중하게 선택하시는 게 중요한 이유입니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Price -->
+        <section id="price" class="section fade-in">
+            <div class="content-card">
+                <h2>가격 안내</h2>
+                <p>가격 문의가 가장 많습니다. 강남 쩜오는 지역 특성상 가격대가 높은 편이며, 인원수, 요일, 시간대에 따라 차이가 있습니다.</p>
+
+                <div class="highlight-box" style="text-align: center; padding: 3rem 2rem; margin: 3rem 0;">
+                    <h3 style="color: var(--champagne-gold); font-size: 2rem; margin-bottom: 1.5rem;">💰 최저가 안내</h3>
+                    <p style="font-size: 1.3rem; margin-bottom: 2rem; line-height: 1.6;">정확한 가격은 <strong style="color: var(--champagne-gold);">유선 상담</strong>을 통해 안내드립니다.<br>인원, 요일, 시간대를 말씀해 주시면 최저가로 상담해 드립니다.</p>
+                    <a href="tel:01023033778" class="cta-button" style="font-size: 1.2rem; padding: 1.3rem 2.8rem; display: inline-block;">📞 010-2303-3778 전화 상담</a>
+                </div>
+
+                <h3>가격 구조 설명</h3>
+                <p>기본적으로 2시간 코스가 기준이며, 여기에는 다음이 포함됩니다:</p>
+
+                <ul>
+                    <li><strong>기본 주류:</strong> 양주 1병 또는 맥주 무제한 중 선택</li>
+                    <li><strong>기본 안주:</strong> 3종 (과일 플레이트, 육포, 견과류 등)</li>
+                    <li><strong>룸 사용료:</strong> 인원에 맞는 룸 배정</li>
+                    <li><strong>서비스 차지:</strong> 1대1 전담 서비스 포함</li>
+                </ul>
+
+                <h3>추가 비용 발생 항목</h3>
+                <ul>
+                    <li><strong>시간 연장:</strong> 1시간 단위로 연장 가능 (비용 별도)</li>
+                    <li><strong>주류 추가:</strong> 양주 추가 시 브랜드별 차이 있음</li>
+                    <li><strong>안주 추가:</strong> 치킨, 탕수육, 회, 초밥 등 메뉴판 참고</li>
+                    <li><strong>지명료:</strong> 재방문 시 같은 담당자 지명할 경우 별도</li>
+                </ul>
+
+                <h3>요일별 가격 차이</h3>
+                <p>평일(월~목)이 가장 저렴하고, 금요일은 중간, 주말(토~일)이 가장 높습니다. 가성비를 생각하시면 평일 방문을 추천드립니다. 정확한 금액은 전화 상담 시 인원과 요일을 말씀해 주시면 바로 안내해 드립니다.</p>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-lounge.webp"
+                         alt="강남 쩜오 라운지 공간 - 편안하고 럭셔리한 대기 공간"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">고급스러운 라운지 - 프리미엄 공간에서의 특별한 경험</figcaption>
+                </figure>
+
+                <h3>결제 방법</h3>
+                <p>현금, 카드 모두 가능합니다. 카드는 개인 카드, 법인 카드 다 됩니다. 영수증은 "유흥주점" 또는 "일반음식점" 중 선택 가능하며, 세금계산서 발행도 가능합니다. 다만 법인 카드 사용 시 회사 규정을 확인하시는 게 좋습니다.</p>
+
+                <p>현금 결제 시 별도 할인은 없습니다. 예전에는 현금 할인을 했었는데, 지금은 카드나 현금이나 동일한 가격입니다. 분할 납부는 불가하고, 여러 명이 각자 카드로 나눠서 내는 건 가능합니다.</p>
+
+                <div class="highlight-box">
+                    <p><strong>상담 안내:</strong> 가격은 매장 상황, 프로모션 여부에 따라 변동될 수 있습니다. 전화 주시면 현재 적용 가능한 최저가로 안내해 드립니다. 010-2303-3778</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Reservation -->
+        <section id="reservation" class="section fade-in">
+            <div class="content-card">
+                <h2>예약 방법 및 절차</h2>
+                <p>예약은 필수입니다. 예약 없이 방문하시면 특히 주말에는 2시간 이상 대기하실 수도 있습니다. 저희는 세 가지 예약 방법을 제공합니다.</p>
+
+                <h3>전화 예약 (가장 빠름)</h3>
+                <p>010-2303-3778로 전화 주시면 됩니다. 운영 시간 중에는 즉시 연결되며, 운영 시간 외에는 다음 날 오전에 회신 드립니다. 전화 예약 시 필요한 정보는 다음과 같습니다:</p>
+
+                <ul>
+                    <li>방문 날짜 및 시간</li>
+                    <li>총 인원수 (정확히)</li>
+                    <li>예약자 성함 (성만 알려주셔도 됩니다)</li>
+                    <li>연락 가능한 전화번호</li>
+                    <li>특별 요청 사항 (있을 시)</li>
+                </ul>
+
+                <p>전화 예약은 보통 3~5분 안에 끝납니다. 예약금이나 보증금은 받지 않습니다. 다만 예약 취소하실 경우 최소 3시간 전에는 연락 주셔야 합니다.</p>
+
+                <h3>카카오톡 예약</h3>
+                <p>전화가 부담스러우시면 카카오톡으로도 예약 가능합니다. 프로필에서 "강남쩜오예약"을 검색하시거나, 010-2303-3778를 친구 추가하시면 됩니다. 카톡 예약은 메시지 확인까지 시간이 걸릴 수 있어서 최소 반나절 전에는 보내주시는 게 좋습니다.</p>
+
+                <p>카톡으로는 간단한 상담도 가능합니다. "3명이 평일 저녁에 가면 얼마예요?", "처음인데 시스템이 어떻게 되나요?" 같은 질문에 답변 드립니다.</p>
+
+                <h3>재방문 고객 우선 예약</h3>
+                <p>한 번 방문하신 고객분들은 전화번호가 시스템에 저장됩니다. 재방문 시 전화하시면 "○○○님 맞으시죠?"하고 바로 확인됩니다. 재방문 고객분들께는 주말에도 예약 우선권을 드리고, 원하시면 이전에 담당했던 분을 지명하실 수도 있습니다. (지명료 별도)</p>
+
+                <div class="highlight-box">
+                    <p><strong>예약 팁:</strong> 금요일 저녁 7~9시, 토요일 저녁 8~11시는 가장 붐비는 시간대입니다. 이 시간에 방문하시려면 평일에 미리 예약하시고, 가능하면 조금 일찍 도착하시는 걸 추천드립니다.</p>
+                </div>
+
+                <h3>예약 변경 및 취소</h3>
+                <p>예약 변경은 당일이라도 가능합니다. 다만 인원이 늘어나는 경우에는 룸 크기 관계로 불가할 수 있습니다. 인원이 줄어드는 건 언제든 괜찮습니다.</p>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-service-01.webp"
+                         alt="강남 쩜오 프리미엄 서비스 - 1대1 전담 시스템"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">프리미엄 서비스 - 완벽한 1대1 전담 케어</figcaption>
+                </figure>
+
+                <p>예약 취소는 방문 예정 시각 3시간 전까지 연락 주시면 됩니다. 패널티나 위약금은 없습니다. 하지만 노쇼(no-show)가 반복되면 다음 예약이 제한될 수 있습니다. 지난 8년간 노쇼로 인한 손실이 꽤 커서, 이 부분은 엄격하게 관리하고 있습니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Entry Process -->
+        <section id="entry" class="section fade-in">
+            <div class="content-card">
+                <h2>입실부터 룸 배정까지</h2>
+                <p>처음 방문하시는 분들이 가장 긴장하는 순간이 입장 과정입니다. 하지만 전혀 어렵지 않습니다. 순서대로 설명드리겠습니다.</p>
+
+                <h3>1단계: 도착 및 프론트 체크인</h3>
+                <p>매장에 도착하시면 1층 프론트가 보입니다. 직원에게 예약자 성함을 말씀하시면 예약 확인 후 바로 대기실로 안내해 드립니다. 신분증 확인은 하지 않습니다. 다만 만 19세 미만은 법적으로 입장이 불가하며, 의심되는 경우에만 신분증 확인을 요청할 수 있습니다.</p>
+
+                <p>프론트에서는 간단한 안내를 받습니다. 기본 요금, 예상 소요 시간, 주의사항 등을 설명 드립니다. 궁금한 게 있으면 이때 물어보시면 됩니다.</p>
+
+                <h3>2단계: 대기실 및 룸 배정</h3>
+                <p>대기실은 1층과 2층에 있습니다. 편안한 소파와 음료가 준비되어 있으며, 평균 대기 시간은 5~10분입니다. 주말 피크 타임에는 20분까지 걸릴 수 있습니다.</p>
+
+                <p>룸 배정은 인원수와 예약 상황에 따라 결정됩니다. 2~3명이면 소형 룸, 4~6명이면 중형 룸, 7명 이상이면 대형 룸으로 안내됩니다. 특정 룸을 요청하실 수는 없지만, "조용한 곳", "스피커 좋은 곳" 같은 요청은 가능한 범위에서 반영해 드립니다.</p>
+
+                <h3>3단계: 룸 입실</h3>
+                <p>배정된 룸으로 매니저가 안내합니다. 각 룸은 테이블, 소파, 노래방 기기, 대형 TV, 음향 시스템이 갖춰져 있습니다. 입실하시면 먼저 주류 선택을 합니다.</p>
+
+                <p>기본 패키지에는 양주 1병 또는 맥주 무제한이 포함되어 있습니다. 양주는 주로 발렌타인 17년산, 윈저, 임페리얼 중에서 선택하시고, 맥주는 카스, 하이네켄, 아사히 중 선택 가능합니다. 둘 다 마시고 싶으시면 양주 선택 후 맥주 추가 주문하시면 됩니다. (맥주 추가는 무료)</p>
+
+                <div class="highlight-box">
+                    <p><strong>실무 팁:</strong> 첫 방문이시면 "처음입니다"라고 솔직하게 말씀하세요. 매니저가 시스템 전체를 다시 한번 설명 드리고, 초이스 진행 시에도 더 자세히 안내해 드립니다. 모르는 척하지 마시고 물어보시는 게 훨씬 편합니다.</p>
+                </div>
+
+                <h3>4단계: 기본 안주 및 세팅</h3>
+                <p>주류 선택 후 5분 정도 지나면 기본 안주 3종이 나옵니다. 보통 과일 플레이트, 육포, 견과류 이렇게 세팅됩니다. 안주 추가가 필요하시면 메뉴판을 보시고 주문하시면 됩니다. 치킨, 탕수육, 회, 초밥 등 다양한 메뉴가 있습니다.</p>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-experience.webp"
+                         alt="강남 쩜오 이용 경험 - 입실부터 퇴실까지의 프리미엄 경험"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">특별한 경험 - 입실부터 완벽한 서비스</figcaption>
+                </figure>
+
+                <p>이제 <a href="#choice" style="color: var(--champagne-gold);">초이스 시스템</a>이 시작됩니다. 초이스는 보통 입실 후 10~15분 정도 지나서 진행됩니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Choice System -->
+        <section id="choice" class="section fade-in">
+            <div class="content-card">
+                <h2>초이스 시스템 자세히</h2>
+                <p>초이스 시스템은 강남 쩜오의 핵심입니다. 어떻게 진행되는지, 어떻게 선택하는지, 재선택은 가능한지 등을 상세히 설명드리겠습니다.</p>
+
+                <h3>초이스 진행 방식</h3>
+                <p>초이스는 크게 두 가지 방식이 있습니다: "라인업" 방식과 "사진" 방식입니다. 저희 매장은 라인업 방식을 기본으로 하되, 요청 시 사진 방식도 병행합니다.</p>
+
+                <p><strong>라인업 방식:</strong> 여성분들이 룸 앞에 일렬로 서시고, 한 분씩 룸 안으로 들어오십니다. 간단하게 인사하시고 나가시면, 다음 분이 들어오십니다. 대략 10~15명 정도 보여드립니다. 모두 보신 후 원하시는 분의 번호를 말씀하시면 됩니다.</p>
+
+                <p><strong>사진 방식:</strong> 태블릿PC로 사진을 보여드립니다. 사진에는 얼굴과 스타일이 나와 있고, 번호가 표시되어 있습니다. 사진 보시고 번호 선택하시면 됩니다. 사진과 실물이 다를 수 있어서, 라인업 방식을 더 선호하시는 고객분들이 많습니다.</p>
+
+                <h3>선택 기준</h3>
+                <p>8년 일하면서 느낀 건데, 외모만 보고 선택하시면 나중에 후회하는 경우가 있습니다. 물론 외모가 중요하지만, 대화나 분위기도 중요합니다. 초이스 시 참고하실 만한 기준을 알려드립니다:</p>
+
+                <ul>
+                    <li><strong>외모 및 스타일:</strong> 본인 취향에 맞는지 확인</li>
+                    <li><strong>첫인상:</strong> 인사할 때 눈 맞춤, 미소, 목소리 톤 체크</li>
+                    <li><strong>분위기:</strong> 차분한 스타일 vs 활발한 스타일</li>
+                    <li><strong>경력:</strong> 신입 vs 경력자 (직접 물어보셔도 됩니다)</li>
+                </ul>
+
+                <p>저희 매장은 여성분들에게 강요하지 않습니다. 술을 억지로 권하거나, 과한 스킨십을 하지 않습니다. 대화하고, 노래 부르고, 편안하게 즐기는 게 목적입니다.</p>
+
+                <h3>재선택 (체인지) 가능 여부</h3>
+                <p>재선택은 가능합니다. 다만 시점에 따라 달라집니다:</p>
+
+                <ul>
+                    <li><strong>초이스 직후 (5분 이내):</strong> 무료 재선택 가능. "생각보다 대화가 안 맞아요"라고 하시면 바로 교체해 드립니다.</li>
+                    <li><strong>서비스 시작 후 (30분 이내):</strong> 1회에 한해 재선택 가능. 추가 비용은 없지만, 대기 시간이 발생할 수 있습니다.</li>
+                    <li><strong>1시간 경과 후:</strong> 재선택 불가. 이미 시간이 많이 흘렀고, 담당자도 해당 테이블에 집중했기 때문입니다.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>실무 팁:</strong> 초이스는 신중하게 하세요. 외모만 보지 마시고, 인사할 때 느낌도 중요합니다. "이 사람이랑 2시간 동안 대화할 수 있을까?"를 생각하시면 좋습니다. 처음이시면 경력 있는 분을 선택하시는 걸 추천드립니다.</p>
+                </div>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-choice-system.webp"
+                         alt="강남 쩜오 초이스 시스템 - 라인업 방식으로 원하는 스타일 직접 선택"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">초이스 시스템 - 원하는 스타일을 직접 선택하는 투명한 시스템</figcaption>
+                </figure>
+
+                <h3>지명 시스템</h3>
+                <p>재방문 시 이전에 담당했던 분을 다시 지명할 수 있습니다. 지명료는 1인당 5만원이며, 예약 시 미리 말씀하시면 해당 인력의 스케줄을 확인해 드립니다. 지명하신 분이 당일 근무하지 않으면 다른 날짜로 조정하거나, 지명 없이 일반 초이스로 진행하시면 됩니다.</p>
+
+                <p>지명 고객분들의 재방문율이 일반 고객보다 20% 정도 높습니다. 한 번 호흡이 맞으면 계속 그분과 하시는 게 만족도가 높습니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: Tips -->
+        <section id="tips" class="section fade-in">
+            <div class="content-card">
+                <h2>실무자가 알려주는 팁</h2>
+                <p>8년간 현장에서 일하면서 쌓은 노하우를 공유합니다. 이걸 알고 가시면 훨씬 만족스러운 경험을 하실 수 있습니다.</p>
+
+                <h3>방문 시간대 선택</h3>
+                <p>시간대에 따라 분위기와 서비스 퀄리티가 달라집니다:</p>
+
+                <ul>
+                    <li><strong>평일 저녁 7~9시:</strong> 적당히 사람 있고, 조용하지도 붐비지도 않음. 첫 방문에 추천.</li>
+                    <li><strong>금요일 저녁 8~11시:</strong> 가장 붐빔. 활기찬 분위기지만 대기 시간 있을 수 있음.</li>
+                    <li><strong>토요일 밤 10시 이후:</strong> 피크 타임. 예약 필수, 가격도 가장 비쌈.</li>
+                    <li><strong>평일 새벽 1~3시:</strong> 한산함. 조용히 즐기고 싶으면 이 시간대 추천.</li>
+                </ul>
+
+                <h3>인원 구성</h3>
+                <p>강남 쩜오는 보통 2~4명이 오십니다. 혼자 오시는 분도 있지만, 2명 이상을 권장드립니다. 혼자 오시면 1대1이라 오히려 부담스러울 수 있습니다. 4명 정도가 가장 적당하고, 분위기도 좋고, 비용도 합리적입니다.</p>
+
+                <h3>비용 절약 팁</h3>
+                <p>솔직히 말씀드리면 강남 쩜오에서 극적인 비용 절약은 어렵습니다. 하지만 몇 가지 방법은 있습니다:</p>
+
+                <ul>
+                    <li><strong>평일 방문:</strong> 주말보다 20~30% 저렴</li>
+                    <li><strong>시간 연장 자제:</strong> 기본 2시간만 즐기고 나오기</li>
+                    <li><strong>주류 추가 최소화:</strong> 기본 제공되는 양주나 맥주로 충분</li>
+                    <li><strong>안주 추가 신중히:</strong> 기본 안주로도 충분한 경우 많음</li>
+                    <li><strong>재방문 시 지명료 절약:</strong> 지명 안 하고 일반 초이스로 새로운 분 만나기</li>
+                </ul>
+
+                <h3>매너 및 에티켓</h3>
+                <p>담당 여성분들도 사람입니다. 예의 지키시면 서비스 퀄리티가 확연히 달라집니다:</p>
+
+                <ul>
+                    <li>반말보다는 존댓말 사용</li>
+                    <li>과한 음주 자제 (술 취해서 난동 부리면 퇴실 조치)</li>
+                    <li>무리한 스킨십 금지 (손잡기 정도만 허용)</li>
+                    <li>사진 촬영은 담당자 동의 필요 (무단 촬영 절대 금지)</li>
+                    <li>개인 연락처 요구 자제 (대부분 거절하시고, 매장 규정 위반)</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>현실 조언:</strong> 강남 쩜오는 가격이 비싼 만큼 퀄리티가 있습니다. 하지만 과도한 기대는 금물입니다. "여기 가면 뭔가 특별한 일이 일어나겠지"라고 생각하시면 실망하실 수 있습니다. 편안하게 술 마시고, 대화하고, 노래 부르는 공간이라고 생각하시면 됩니다.</p>
+                </div>
+
+                <h3>재방문 전략</h3>
+                <p>한 번 방문하시고 만족하셨다면, 재방문 시 이렇게 하세요:</p>
+
+                <ul>
+                    <li>이전 담당자가 좋았으면 지명 (5만원 추가지만 만족도 높음)</li>
+                    <li>예약 시 "재방문 고객"이라고 말씀하시면 우대</li>
+                    <li>평일 방문으로 비용 절약</li>
+                    <li>특정 요청 사항 있으면 예약 시 미리 전달</li>
+                </ul>
+
+                <figure class="image-figure">
+                    <img src="images/gangnam-jjumo-premium-service.webp"
+                         alt="강남 쩜오 프리미엄 서비스 경험 - 최상급 케어와 서비스"
+                         class="section-image"
+                         width="900"
+                         height="600"
+                         loading="lazy">
+                    <figcaption class="image-caption">프리미엄 서비스 - 재방문율 76%의 비결</figcaption>
+                </figure>
+
+                <p>재방문율 76%는 이유가 있습니다. 한 번 시스템 익히시면 그다음부터는 훨씬 편하고 만족스럽습니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: Caution -->
+        <section id="caution" class="section fade-in">
+            <div class="content-card">
+                <h2>주의사항 및 에티켓</h2>
+                <p>즐거운 경험을 위해 반드시 지켜야 할 사항들입니다. 이걸 어기시면 서비스 제공이 중단되거나 퇴실 조치될 수 있습니다.</p>
+
+                <h3>절대 금지 행위</h3>
+                <ul>
+                    <li><strong>폭력 행위:</strong> 담당자나 다른 고객에게 폭언, 폭행 시 즉시 퇴실 및 신고 조치</li>
+                    <li><strong>성추행:</strong> 합의되지 않은 스킨십은 모두 금지. 경고 없이 퇴실됩니다.</li>
+                    <li><strong>무단 촬영:</strong> 담당자나 매장 내부 무단 촬영 시 법적 조치 가능</li>
+                    <li><strong>마약류:</strong> 마약 복용, 소지 적발 시 경찰 신고</li>
+                    <li><strong>기물 파손:</strong> 노래방 기기, 테이블, 소파 등 파손 시 변상</li>
+                    <li><strong>소란 행위:</strong> 다른 룸에 피해 줄 정도로 시끄럽게 하는 행위</li>
+                </ul>
+
+                <h3>환불 및 취소 규정</h3>
+                <p>저희는 명확한 환불 규정을 운영합니다:</p>
+
+                <ul>
+                    <li><strong>서비스 시작 전:</strong> 예약 취소는 3시간 전까지 무료, 이후에는 기본 요금의 30% 취소 수수료</li>
+                    <li><strong>서비스 시작 후:</strong> 고객 사유로 인한 중도 퇴실 시 환불 불가</li>
+                    <li><strong>매장 사유:</strong> 정전, 시설 고장 등 매장 사유 시 전액 환불 또는 다른 날짜 제공</li>
+                    <li><strong>분쟁 발생:</strong> 담당자와 문제 발생 시 매니저 호출, 협의 후 부분 환불 가능</li>
+                </ul>
+
+                <h3>개인정보 보호</h3>
+                <p>고객님의 개인정보는 예약 및 운영 목적으로만 사용됩니다. 예약 시 받은 전화번호와 성함은 외부 유출되지 않으며, 마케팅 용도로도 사용하지 않습니다. CCTV는 법적 의무사항으로 복도와 공용 공간에만 설치되어 있고, 룸 내부에는 없습니다.</p>
+
+                <h3>분실물 처리</h3>
+                <p>퇴실 후 분실물이 발견되면 최대 1개월간 보관합니다. 전화 주시면 방문 수령 또는 착불 택배 발송 가능합니다. 1개월 경과 시 처분되며, 귀중품은 경찰서에 유실물로 신고합니다.</p>
+
+                <div class="highlight-box">
+                    <p><strong>중요:</strong> 만 19세 미만은 법적으로 입장이 불가능합니다. 청소년을 동반하거나, 신분증을 위조하여 입장 시 법적 처벌을 받을 수 있습니다. 또한 미성년자에게 술을 제공하는 행위는 청소년보호법 위반입니다.</p>
+                </div>
+
+                <h3>비상 상황 대처</h3>
+                <p>화재, 지진 등 비상 상황 발생 시 각 룸에 있는 비상벨을 누르시거나, 복도로 나오시면 직원이 대피를 안내합니다. 비상구는 각 층 양쪽 끝에 있으며, 평소에도 확인해 두시면 좋습니다.</p>
+
+                <p>응급 환자 발생 시 즉시 매니저를 호출하시면 119 신고 및 응급 처치를 도와드립니다. 과음으로 인한 응급 상황이 가장 빈번하니, 무리한 음주는 자제해 주시기 바랍니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 9: FAQ -->
+        <section id="faq" class="section fade-in">
+            <h2 class="section-title">자주 묻는 질문 FAQ</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q1. 처음인데 혼자 가도 되나요?</div>
+                <div class="faq-answer">가능은 합니다. 하지만 2명 이상을 권장드립니다. 혼자 오시면 1대1 상황이라 오히려 부담스러울 수 있고, 가격 면에서도 비효율적입니다. 친구나 동료 한 명과 함께 오시는 게 훨씬 편하고 즐겁습니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q2. 여자 손님도 방문 가능한가요?</div>
+                <div class="faq-answer">네, 가능합니다. 실제로 여성 고객분들도 종종 방문하십니다. 주로 남성 동료들과 함께 오시는 경우가 많고, 여성분들만 오시는 경우도 있습니다. 여성 손님께도 동일한 서비스가 제공되며, 원하시면 남성 직원이 담당할 수도 있습니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q3. 카드 영수증에 뭐라고 찍히나요?</div>
+                <div class="faq-answer">기본적으로 "유흥주점"으로 표기됩니다. 하지만 요청하시면 "일반음식점"으로 변경 가능합니다. 법인 카드 사용 시 회사 규정을 확인하시고, 필요하면 세금계산서 발행도 가능합니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q4. 시간 연장은 얼마나 할 수 있나요?</div>
+                <div class="faq-answer">기본 2시간 후 1시간 단위로 연장 가능합니다. 최대 4시간까지 연장할 수 있습니다. 연장 요금은 시간당 기본 요금의 50%입니다. 새벽 시간에는 익일 영업 준비로 인해 연장이 제한될 수 있습니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q5. 담당자와 연락처 교환이 가능한가요?</div>
+                <div class="faq-answer">매장 규정상 금지되어 있습니다. 고객님과 담당자 모두를 보호하기 위한 정책입니다. 재방문 시 같은 분을 만나고 싶으시면 지명 시스템을 이용하시면 됩니다. 지명료는 1인당 5만원입니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q6. 예약 없이 당일 방문 가능한가요?</div>
+                <div class="faq-answer">평일 오후 시간대는 가능한 경우가 많습니다. 하지만 금요일 저녁, 토요일 밤에는 예약이 필수입니다. 당일 방문 전 전화로 자리 확인하시는 걸 권장드립니다. 예약 없이 오셨다가 대기 시간이 2시간 이상 발생할 수도 있습니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q7. 주차는 어떻게 하나요?</div>
+                <div class="faq-answer">건물 지하에 전용 주차장이 있습니다. 발렛 파킹 서비스는 제공하지 않으며, 직접 주차하시면 됩니다. 주차 요금은 2시간 무료, 이후 30분당 3천원입니다. 주말에는 주차 공간이 부족할 수 있어서 대중교통 이용을 권장드립니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q8. 초이스에서 마음에 드는 사람이 없으면 어떻게 하나요?</div>
+                <div class="faq-answer">추가로 다른 분들을 더 보여드립니다. 보통 10~15명을 보여드리는데, 그중에서 선택이 어려우시면 추가 라인업을 요청하실 수 있습니다. 그래도 만족스럽지 않으시면 환불 처리 또는 다른 날짜로 변경해 드립니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q9. 다른 강남 쩜오와 비교해서 어떤가요?</div>
+                <div class="faq-answer">저희는 중상위권 매장입니다. 가격은 평균보다 약간 높지만, 시설과 서비스 퀄리티가 검증되어 있습니다. 재방문율 76%가 이를 증명합니다. 더 저렴한 곳도 있고 더 비싼 곳도 있으니, 예산과 목적에 맞게 선택하시면 됩니다.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q10. 외국인도 방문 가능한가요?</div>
+                <div class="faq-answer">네, 가능합니다. 영어 가능한 직원이 있어서 기본적인 의사소통은 됩니다. 다만 담당자 중 영어 가능한 분이 제한적이라서, 예약 시 미리 말씀해 주시면 영어 가능한 인력을 배정해 드립니다. 일본어, 중국어는 기본 수준만 가능합니다.</div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section fade-in">
+            <div class="content-card" style="text-align: center;">
+                <h2>상담 및 예약 문의</h2>
+                <p style="font-size: 1.2rem; margin: 2rem 0;">강남 쩜오에 대해 더 궁금하신 점이 있으시거나 예약을 원하시면 언제든지 연락 주세요.</p>
+
+                <div style="margin: 3rem 0;">
+                    <a href="tel:01023033778" class="cta-button" style="font-size: 1.3rem; padding: 1.5rem 3rem;">📞 전화 상담 010-2303-3778</a>
+                </div>
+
+                <p style="color: var(--text-muted); margin-top: 2rem;">운영시간: 평일/주말 오후 6시 ~ 새벽 4시 (금토는 새벽 5시)<br>
+                예약 문의는 24시간 카카오톡으로도 가능합니다.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Mobile Fixed CTA -->
+    <div class="mobile-fixed-cta">
+        <a href="tel:01023033778">전화 상담 받기</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contact">010-2303-3778</div>
+            <p class="footer-text">강남 쩜오 전문 상담 및 예약</p>
+            <p class="footer-text" style="margin-top: 1rem; font-size: 0.85rem;">
+                본 페이지는 강남 쩜오 이용 안내를 목적으로 제작되었습니다.<br>
+                만 19세 미만은 법적으로 이용이 불가능합니다.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "강남 쩜오",
+        "description": "강남 프리미엄 쩜오 전문 매장. 8년 운영 경험, 재방문율 76%, 투명한 가격 시스템.",
+        "telephone": "010-2303-3778",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "강남구",
+            "addressRegion": "서울",
+            "addressCountry": "KR"
+        },
+        "openingHours": "Mo-Th 18:00-04:00, Fr-Sa 18:00-05:00, Su 18:00-04:00",
+        "priceRange": "₩₩₩₩"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "처음인데 혼자 가도 되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "가능은 합니다. 하지만 2명 이상을 권장드립니다. 혼자 오시면 1대1 상황이라 오히려 부담스러울 수 있고, 가격 면에서도 비효율적입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "여자 손님도 방문 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네, 가능합니다. 실제로 여성 고객분들도 종종 방문하십니다. 여성 손님께도 동일한 서비스가 제공됩니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "카드 영수증에 뭐라고 찍히나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "기본적으로 유흥주점으로 표기됩니다. 하지만 요청하시면 일반음식점으로 변경 가능합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "시간 연장은 얼마나 할 수 있나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "기본 2시간 후 1시간 단위로 연장 가능합니다. 최대 4시간까지 연장할 수 있습니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "담당자와 연락처 교환이 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "매장 규정상 금지되어 있습니다. 재방문 시 같은 분을 만나고 싶으시면 지명 시스템을 이용하시면 됩니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "예약 없이 당일 방문 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "평일 오후 시간대는 가능한 경우가 많습니다. 하지만 금요일 저녁, 토요일 밤에는 예약이 필수입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "주차는 어떻게 하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "건물 지하에 전용 주차장이 있습니다. 주차 요금은 2시간 무료, 이후 30분당 3천원입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "초이스에서 마음에 드는 사람이 없으면 어떻게 하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "추가로 다른 분들을 더 보여드립니다. 그래도 만족스럽지 않으시면 환불 처리 또는 다른 날짜로 변경해 드립니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "다른 강남 쩜오와 비교해서 어떤가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "저희는 중상위권 매장입니다. 재방문율 76%가 검증된 품질을 증명합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "외국인도 방문 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네, 가능합니다. 영어 가능한 직원이 있어서 기본적인 의사소통은 됩니다."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "홈",
+                "item": "https://example.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "강남 쩜오",
+                "item": "https://example.com/gangnam-jjumo"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "강남 쩜오 시스템부터 가격까지 - 8년 운영진이 알려주는 현실 가이드",
+        "description": "강남 쩜오 실무 8년차가 시스템, 가격, 예약부터 초이스까지 솔직하게 안내합니다.",
+        "url": "https://example.com/gangnam-jjumo",
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "inLanguage": "ko-KR"
+    }
+    </script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add mobile padding for fixed CTA
+        if (window.innerWidth <= 768) {
+            document.querySelector('.footer').style.paddingBottom = '80px';
+        }
+    </script>
+
+</body>
+</html>
