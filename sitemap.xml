@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Main Page -->
+    <url>
+        <loc>https://gnang-jjumo.com/</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+
+        <!-- Images -->
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-hero.webp</image:loc>
+            <image:title>강남 쩜오 히어로 이미지</image:title>
+            <image:caption>강남 쩜오 프리미엄 서비스 히어로 이미지</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-interior-01.webp</image:loc>
+            <image:title>강남 쩜오 프리미엄 인테리어</image:title>
+            <image:caption>고급스러운 분위기의 VIP 라운지</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-vip-room.webp</image:loc>
+            <image:title>강남 쩜오 VIP 룸</image:title>
+            <image:caption>최신형 노래방 기기와 고급 음향 시스템 완비</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-lounge.webp</image:loc>
+            <image:title>강남 쩜오 라운지</image:title>
+            <image:caption>편안하고 럭셔리한 대기 공간</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-service-01.webp</image:loc>
+            <image:title>강남 쩜오 프리미엄 서비스</image:title>
+            <image:caption>1대1 전담 시스템</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-experience.webp</image:loc>
+            <image:title>강남 쩜오 이용 경험</image:title>
+            <image:caption>입실부터 퇴실까지의 프리미엄 경험</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-choice-system.webp</image:loc>
+            <image:title>강남 쩜오 초이스 시스템</image:title>
+            <image:caption>라인업 방식으로 원하는 스타일 직접 선택</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://gnang-jjumo.com/images/gangnam-jjumo-premium-service.webp</image:loc>
+            <image:title>강남 쩜오 프리미엄 서비스 경험</image:title>
+            <image:caption>최상급 케어와 서비스</image:caption>
+        </image:image>
+    </url>
+
+</urlset>
