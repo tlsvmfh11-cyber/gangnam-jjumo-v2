@@ -1225,133 +1225,58 @@
     </script>
 
     <!-- 복사방지 스크립트 -->
-    <script>
-        (function() {
-            'use strict';
+    <!-- мЅн…ђмё  ліґнё JavaScript (ліµм‚¬ к°ЂлЉҐ лІ„м „) -->
+<script>
+(function () {
+    'use strict';
 
-            // 우클릭 방지
-            document.addEventListener('contextmenu', function(e) {
+    // мљ°нЃґл¦­ л°©м§Ђ
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        return false;
+    });
+
+    // л“њлћк·ё л°©м§Ђ
+    document.addEventListener('dragstart', function (e) {
+        e.preventDefault();
+        return false;
+    });
+
+    // н…ЌмЉ¤нЉё м„ нѓќмќЂ н—€мљ© (selectstart м°Ёл‹Ё м њк±°) в†’ Ctrl+C / Ctrl+A м •мѓЃ лЏ™мћ‘
+    document.addEventListener('keydown', function (e) {
+        // Ctrl+U (м†ЊмЉ¤ліґкё°)
+        if ((e.ctrlKey || e.metaKey) && e.keyCode === 85) {
+            e.preventDefault();
+            return false;
+        }
+        // F12, Ctrl+Shift+I / J / C
+        if (e.keyCode === 123 || ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67))) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // мќґлЇём§Ђ л“њлћк·ё л°©м§Ђ
+    document.addEventListener('DOMContentLoaded', function () {
+        var images = document.getElementsByTagName('img');
+        for (var i = 0; i < images.length; i++) {
+            images[i].addEventListener('dragstart', function (e) {
                 e.preventDefault();
                 return false;
             });
+        }
+    });
 
-            // 텍스트 선택 방지
-            document.addEventListener('selectstart', function(e) {
-                e.preventDefault();
-                return false;
-            });
-
-            // 드래그 방지
-            document.addEventListener('dragstart', function(e) {
-                e.preventDefault();
-                return false;
-            });
-
-            // 이미지 드래그 방지
-            document.querySelectorAll('img').forEach(img => {
-                img.addEventListener('dragstart', function(e) {
-                    e.preventDefault();
-                    return false;
-                });
-            });
-
-            // 키보드 단축키 방지
-            document.addEventListener('keydown', function(e) {
-                // F12 (개발자 도구)
-                if (e.keyCode === 123) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+Shift+I (개발자 도구)
-                if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+Shift+J (콘솔)
-                if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+U (소스 보기)
-                if (e.ctrlKey && e.keyCode === 85) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+S (저장)
-                if (e.ctrlKey && e.keyCode === 83) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+C (복사)
-                if (e.ctrlKey && e.keyCode === 67) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+A (전체 선택)
-                if (e.ctrlKey && e.keyCode === 65) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+X (잘라내기)
-                if (e.ctrlKey && e.keyCode === 88) {
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Ctrl+P (인쇄)
-                if (e.ctrlKey && e.keyCode === 80) {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-
-            // 복사 이벤트 방지
-            document.addEventListener('copy', function(e) {
-                e.preventDefault();
-                return false;
-            });
-
-            // 잘라내기 방지
-            document.addEventListener('cut', function(e) {
-                e.preventDefault();
-                return false;
-            });
-
-            // 붙여넣기 방지
-            document.addEventListener('paste', function(e) {
-                e.preventDefault();
-                return false;
-            });
-
-            // 개발자 도구 감지 (선택적)
-            const devtools = /./;
-            devtools.toString = function() {
-                this.opened = true;
-            }
-
-            setInterval(function() {
-                if (devtools.opened) {
-                    // 개발자 도구가 열린 것을 감지
-                    document.body.innerHTML = '';
-                }
-                console.log(devtools);
-                devtools.opened = false;
-            }, 1000);
-
-            // 콘솔 경고 메시지
-            console.log('%c⚠️ 경고', 'color: red; font-size: 40px; font-weight: bold;');
-            console.log('%c이 웹사이트의 콘텐츠는 저작권으로 보호되며, 무단 복사 및 배포는 법적 책임을 물을 수 있습니다.', 'color: red; font-size: 16px;');
-            console.log('%cCopyright © SEO 현식컴퍼니. All Rights Reserved.', 'color: #d4af37; font-size: 14px;');
-
-        })();
-    </script>
+    // PrintScreen: л№€ л¬ёмћђм—ґлЎњ м§Ђмљ°м§Ђ м•Љкі  н„мћ¬ мЈјм†ЊлҐј ліµм‚¬
+    document.addEventListener('keyup', function (e) {
+        if (e.key === 'PrintScreen' && navigator.clipboard && navigator.clipboard.writeText) {
+            setTimeout(function () {
+                navigator.clipboard.writeText(location.href).catch(function () {});
+            }, 120);
+        }
+    });
+})();
+</script>
 
 </body>
 </html>
